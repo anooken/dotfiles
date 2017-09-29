@@ -1,0 +1,36 @@
+# Git
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg='git log --stat --color'
+alias glgp='git log --stat --color -p'
+alias glgg='git log --graph --color'
+alias glgga='git log --graph --decorate --all'
+alias glgm='git log --graph --max-count=10'
+alias glo='git log --oneline --decorate --color'
+alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+alias glog='git log --oneline --decorate --color --graph'
+
+# Easy navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Shorthand
+alias be="bundle exec"
+
+# Bash terminal pimp
+COLOR_RED='\[\e[1;31m\]'
+COLOR_GREEN='\[\e[32m\]'
+COLOR_YELLOW='\[\e[33m\]'
+COLOR_BLUE='\[\e[34m\]'
+COLOR_BLACK='\[\e[0m\]'
+GIT_PS1_SHOWUPSTREAM="auto"
+
+# Load git prompt
+[[ -f ~/.git-prompt.sh ]] && source ~/.git-prompt.sh
+[[ -f ~/.git-completion.bash ]] && source ~/.git-completion.bash
+
+if [ $(id -u) -eq 0 ]; then
+  PS1="${COLOR_RED}\u${COLOR_BLUE}:\w${COLOR_BLACK}\$(__git_ps1) # "
+else
+  PS1="${COLOR_RED}\u${COLOR_BLUE}:\w${COLOR_BLACK}\$(__git_ps1) \$ "
+fi

@@ -1,0 +1,20 @@
+" Define bundles via Github repos
+
+" Disable unused plugins
+UnPlug 'ale'
+UnPlug 'vim-elixir'
+UnPlug 'vim-go'
+UnPlug 'vim-slim'
+
+Plug 'ervandew/supertab'
+" Plug 'groenewege/vim-less'
+" Plug 'mxw/vim-jsx'
+Plug 'rking/ag.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'isRuslan/vim-es6'
+Plug 'vim-airline/vim-airline'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'scrooloose/nerdtree'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'easymotion/vim-easymotion'

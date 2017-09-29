@@ -1,0 +1,55 @@
+set ignorecase
+set smartcase
+set nowrap
+set softtabstop=2
+set autoindent
+set formatoptions-=t
+
+" Make vim explorer stay in current directory
+" let g:netrw_keepdir=0
+
+" Folding setting
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
+" Use onedark color scheme
+if !has('gui_running')
+  let g:onedark_termcolors=256
+  set t_Co=256
+  set nocursorline
+endif
+
+colorscheme onedark
+
+" Set tab color
+hi TabLine ctermfg=0 ctermbg=250
+hi TabLineFill ctermbg=250
+
+" Easier tab navigation
+nnoremap GT :tabp<CR>
+nnoremap <Leader>n :tabnew<CR>
+nnoremap <Leader>q :tabclose<CR>
+
+" Jump between last 2 files
+nnoremap <Leader><Tab> <c-^>
+
+" open ctags in split tab/screen
+map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader><C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+nnoremap <silent><Leader><Up> :vertical resize +10<CR>
+nnoremap <silent><Leader><Down> :vertical resize -10<CR>
+
+nnoremap <silent><Leader>gb :Gblame<CR>
+nnoremap <silent><Leader>gs :Gstatus<CR>
+
+map <C-k><C-b> :NERDTreeToggle<CR>
+nnoremap <Leader>w :w<CR>
+
+" remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" easymotion configs
+let g:EasyMotion_smartcase = 1
