@@ -30,7 +30,6 @@ hi TabLineFill ctermbg=250
 " Easier tab navigation
 nnoremap GT :tabp<CR>
 nnoremap <Leader>n :tabnew<CR>
-nnoremap <Leader>q :tabclose<CR>
 
 " Jump between last 2 files
 nnoremap <Leader><Tab> <c-^>
@@ -47,6 +46,7 @@ nnoremap <silent><Leader>gs :Gstatus<CR>
 
 map <C-k><C-b> :NERDTreeToggle<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
