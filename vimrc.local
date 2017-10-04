@@ -53,3 +53,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " easymotion configs
 let g:EasyMotion_smartcase = 1
+
+" vim-airline themed tabline
+let g:airline_powerline_fonts = 1
