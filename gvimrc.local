@@ -12,7 +12,7 @@ elseif has('gui_macvim')
   " Enable Fira Code ligatures
   set macligatures
 
-  set guifont=Fira\ Code:h19
+  set guifont=Fira\ Code\ Light:h19
 else
   set guifont=Menlo\ Regular:h18
 endif
