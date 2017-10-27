@@ -9,7 +9,7 @@ set formatoptions-=t
 " let g:netrw_keepdir=0
 
 " Folding setting
-set foldmethod=indent
+set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
