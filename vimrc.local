@@ -9,7 +9,11 @@ set formatoptions-=t
 " let g:netrw_keepdir=0
 
 " Folding setting
-set foldmethod=syntax
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=syntax | endif
+augroup END
+
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
