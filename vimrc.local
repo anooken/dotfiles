@@ -51,6 +51,7 @@ nnoremap <silent><Leader>gs :Gstatus<CR>
 map <C-k><C-b> :NERDTreeToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <silent><Leader>bd :DeleteHiddenBuffers<CR>:echoe "Hidden Buffers Deleted"<CR>
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e

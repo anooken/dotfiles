@@ -18,5 +18,5 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'brookhong/ag.vim'
-
+Plug 'arithran/vim-delete-hidden-buffers'
 Plug 'leafgarland/typescript-vim'
