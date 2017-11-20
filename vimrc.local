@@ -64,3 +64,41 @@ nmap zuz <Plug>(FastFoldUpdate)
 let g:fastfold_savehook = 0
 let g:fastfold_fold_command_suffixes = ['x','X','a','A','o','O','c','C']
 let g:ruby_fold = 1
+
+" Vim lightline.vem configs
+set noshowmode
+let g:lightline = {
+  \   'colorscheme': 'onedark',
+  \   'component_function': {
+  \     'fugitive': 'LightlineFugitive',
+  \     'readonly': 'LightlineReadonly',
+  \     'myrelativepath': 'LightlineRelativePath'
+  \   },
+  \   'separator': { 'left': "", 'right': "" },
+  \   'subseparator': { 'left': "", 'right': "" }
+  \ }
+
+let g:lightline.active = {
+  \   'left': [['mode', 'paste'], ['fugitive'], ['readonly', 'myrelativepath']],
+  \   'right': [['lineinfo'], ['percent'], ['filetype']]
+  \ }
+
+function! LightlineFugitive()
+  if exists('*fugitive#head')
+    let branch = fugitive#head()
+    return branch !=# '' ? ' '.branch : ''
+  endif
+  return ''
+endfunction
+
+function! LightlineReadonly()
+  return &readonly ? '' : ''
+endfunction
+
+function! LightlineRelativePath()
+  if &modified
+    return expand("%f").'[+]'
+  else
+    return expand("%f")
+  endif
+endfunction
