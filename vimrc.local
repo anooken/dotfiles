@@ -8,11 +8,8 @@ set formatoptions-=t
 " Make vim explorer stay in current directory
 " let g:netrw_keepdir=0
 
-" Folding setting
-augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=syntax | endif
-augroup END
+" Set default foldmethod. Not every syntax has folding set
+set foldmethod=indent
 
 set foldnestmax=10
 set nofoldenable
@@ -61,3 +58,9 @@ let g:EasyMotion_smartcase = 1
 
 " vim-airline themed tabline
 let g:airline_powerline_fonts = 1
+
+" FastFold configuration
+nmap zuz <Plug>(FastFoldUpdate)
+let g:fastfold_savehook = 0
+let g:fastfold_fold_command_suffixes = ['x','X','a','A','o','O','c','C']
+let g:ruby_fold = 1
