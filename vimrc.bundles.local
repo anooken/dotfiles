@@ -1,7 +1,6 @@
 " Define bundles via Github repos
 
 " Disable unused plugins
-UnPlug 'ale'
 UnPlug 'vim-elixir'
 UnPlug 'vim-go'
 UnPlug 'vim-slim'

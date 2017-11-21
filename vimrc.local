@@ -25,6 +25,12 @@ endif
 
 colorscheme onedark
 
+" Ale linting error jump
+nunmap ]r
+nunmap [r
+nnoremap <Leader>p :ALENextWrap<CR>
+nnoremap <Leader>. :ALEPreviousWrap<CR>
+
 " Set tab color
 hi TabLine ctermfg=0 ctermbg=250
 hi TabLineFill ctermbg=250
