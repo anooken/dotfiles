@@ -7,9 +7,9 @@ UnPlug 'vim-slim'
 
 Plug 'ervandew/supertab'
 " Plug 'groenewege/vim-less'
-" Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 Plug 'joshdick/onedark.vim'
-Plug 'isRuslan/vim-es6'
+Plug 'isRuslan/vim-es6', { 'for': ['javascript'] }
 Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
@@ -17,6 +17,6 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'brookhong/ag.vim'
-Plug 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
