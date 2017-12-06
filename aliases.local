@@ -35,3 +35,5 @@ if [ $(id -u) -eq 0 ]; then
 else
   PS1="${COLOR_RED}\u${COLOR_BLUE}:\w${COLOR_BLACK}\$(__git_ps1) \$ "
 fi
+
+export HISTSIZE=1000
