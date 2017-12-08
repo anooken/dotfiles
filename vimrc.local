@@ -16,14 +16,9 @@ set nofoldenable
 set foldlevel=1
 set noshowmode
 
-" Use onedark color scheme
-if !has('gui_running')
-  let g:onedark_termcolors=256
-  set t_Co=256
-  set nocursorline
-endif
-
-colorscheme onedark
+" colorscheme seoul256
+let g:seoul256_background = 236
+colorscheme seoul256
 
 " Ale linting error jump
 nunmap ]r
@@ -64,7 +59,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:EasyMotion_smartcase = 1
 
 " vim-airline themed tabline
-let g:airline_theme = 'onedark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#default#layout = [
   \   ['a', 'b', 'c'],
