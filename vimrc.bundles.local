@@ -4,7 +4,7 @@
 UnPlug 'vim-elixir'
 UnPlug 'vim-go'
 UnPlug 'vim-slim'
-UnPlug 'ale'
+" UnPlug 'ale'
 
 Plug 'ervandew/supertab'
 " Plug 'groenewege/vim-less'
