@@ -5,12 +5,17 @@ set softtabstop=2
 set autoindent
 set formatoptions-=t
 
+" Auto resize Vim splits to active split
+set winwidth=104
+set winheight=5
+set winminheight=5
+set winheight=999
+
 " Make vim explorer stay in current directory
 " let g:netrw_keepdir=0
 
 " Set default foldmethod. Not every syntax has folding set
 set foldmethod=indent
-
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
