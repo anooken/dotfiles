@@ -11,6 +11,9 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
+autocmd WinEnter,BufEnter * setlocal cursorline
+autocmd WinLeave,BufLeave * setlocal nocursorline
+
 " Make vim explorer stay in current directory
 " let g:netrw_keepdir=0
 
