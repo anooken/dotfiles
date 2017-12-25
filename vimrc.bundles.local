@@ -22,3 +22,4 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
+Plug 'chrisbra/csv.vim'
