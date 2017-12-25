@@ -6,10 +6,17 @@ set autoindent
 set formatoptions-=t
 
 " Auto resize Vim splits to active split
-set winwidth=104
-set winheight=5
-set winminheight=5
-set winheight=999
+augroup splitresize
+  au!
+  autocmd WinEnter * call ResizeActiveSplit()
+augroup END
+
+function ResizeActiveSplit()
+  setl winwidth=105
+  setl winheight=5
+  setl winminheight=5
+  setl winheight=999
+endfunction
 
 " Make vim explorer stay in current directory
 " let g:netrw_keepdir=0
