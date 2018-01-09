@@ -29,3 +29,5 @@
 [user]
 	name = Karun S.
 	email = karoon.siri@gmail.com
+[diff]
+  colorMoved = zebra
