@@ -1,8 +1,11 @@
 # Set 0 delay when ECS is pressed in tmux
 set escape-time 0
 
-bind-key v split-window -h
-bind-key s split-window -v
+# Split window to the right
+bind-key right split-window -h
+
+# Split window to the bottom
+bind-key down  split-window -v
 
 # Clear screen using Ctrl-k (after prefix)
 bind-key -r C-k send-keys -R \; send-keys C-l \; clear-history
