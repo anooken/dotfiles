@@ -11,7 +11,7 @@ augroup splitresize
   autocmd WinEnter * call ResizeActiveSplit()
 augroup END
 
-function ResizeActiveSplit()
+function! ResizeActiveSplit()
   setl winwidth=105
   setl winheight=5
   setl winminheight=5
