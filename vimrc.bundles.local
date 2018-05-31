@@ -5,6 +5,7 @@ UnPlug 'vim-elixir'
 UnPlug 'vim-go'
 UnPlug 'vim-slim'
 " UnPlug 'ale'
+UnPlug 'fatih/vim-go'
 
 Plug 'ervandew/supertab'
 " Plug 'groenewege/vim-less'
@@ -23,3 +24,5 @@ Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
+Plug 'chr4/nginx.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

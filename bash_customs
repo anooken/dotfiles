@@ -43,3 +43,6 @@ fi
 
 # fzf Ctrl-T options
 export FZF_CTRL_T_OPTS="--preview 'head -100 {}'"
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
