@@ -58,7 +58,6 @@ nnoremap <silent><Leader><Down> :vertical resize -10<CR>
 
 nnoremap <silent><Leader>gb :Gblame<CR>
 nnoremap <silent><Leader>gs :Gstatus<CR>
-nnoremap <silent><Leader>gr :GoRun<CR>
 
 noremap <silent><C-t><C-t> :NERDTreeToggle<CR>
 nnoremap <Leader>w :w<CR>
