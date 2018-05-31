@@ -90,3 +90,7 @@ nmap zuz <Plug>(FastFoldUpdate)
 let g:fastfold_savehook = 0
 let g:fastfold_fold_command_suffixes = ['x','X','a','A','o','O','c','C']
 let g:ruby_fold = 1
+
+" omnicomplete vim-like navigation override
+inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
+inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
