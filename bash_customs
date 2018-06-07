@@ -46,3 +46,20 @@ export FZF_CTRL_T_OPTS="--preview 'head -100 {}'"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Set GOPATH automatically when changing into it by checking for .gopath file
+# .gopath file must be inside a folder you want to add to GOPATH
+AppendGoPath() {
+  if [ -f "$PWD/.gopath" ]; then
+    if ! [[ "$GOPATH" =~ "$PWD" ]]; then
+      echo "Setting $GOPATH"
+      export GOPATH=$PWD:$GOPATH
+    fi
+  fi
+}
+
+# Include AppendGoPath if PROMPT_COMMAND does not already have it
+if ! [[ "$PROMPT_COMMAND" =~ "*AppendGoPath*" ]]; then
+  export PREV_PROMPT_COMMAND=$PROMPT_COMMAND
+  export PROMPT_COMMAND="AppendGoPath; $PROMPT_COMMAND"
+fi
