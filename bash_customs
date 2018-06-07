@@ -35,7 +35,7 @@ fi
 
 # Export android binary
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  # Max OS
+  # Mac OS
   export ANDROID_HOME=$HOME/Library/Android/sdk
 else
   export ANDROID_HOME=/opt/Android/sdk
