@@ -2,10 +2,9 @@
 
 " Disable unused plugins
 UnPlug 'vim-elixir'
-UnPlug 'vim-go'
 UnPlug 'vim-slim'
 " UnPlug 'ale'
-UnPlug 'fatih/vim-go'
+UnPlug 'vim-go'
 
 Plug 'ervandew/supertab'
 " Plug 'groenewege/vim-less'
@@ -26,3 +25,4 @@ Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'chr4/nginx.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'tpope/vim-markdown'
