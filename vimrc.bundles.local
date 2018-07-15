@@ -3,27 +3,32 @@
 " Disable unused plugins
 UnPlug 'vim-elixir'
 UnPlug 'vim-slim'
-" UnPlug 'ale'
+UnPlug 'ale'
 UnPlug 'vim-go'
+UnPlug 'vim-bundler'
+UnPlug 'vim-test'
+UnPlug 'vim-rails'
+UnPlug 'vim-rake'
+UnPlug 'vim-ruby'
 
 Plug 'ervandew/supertab'
 " Plug 'groenewege/vim-less'
 " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-Plug 'joshdick/onedark.vim'
-Plug 'isRuslan/vim-es6', { 'for': ['javascript'] }
+" Plug 'joshdick/onedark.vim'
+" Plug 'isRuslan/vim-es6', { 'for': ['javascript'] }
 Plug 'vim-airline/vim-airline'
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'Yggdroot/indentLine'
-Plug 'easymotion/vim-easymotion'
+" Plug 'cakebaker/scss-syntax.vim'
+" Plug 'Yggdroot/indentLine'
+" Plug 'easymotion/vim-easymotion'
 Plug 'brookhong/ag.vim'
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+" Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'karunsiri/vim-delete-hidden-buffers'
-Plug 'Konfekt/FastFold'
+" Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
-Plug 'chrisbra/csv.vim'
-Plug 'chr4/nginx.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'tpope/vim-markdown'
-Plug 'ekalinin/Dockerfile.vim'
+" Plug 'chrisbra/csv.vim'
+" Plug 'chr4/nginx.vim'
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'tpope/vim-markdown'
+" Plug 'ekalinin/Dockerfile.vim'
