@@ -93,3 +93,5 @@ let g:ruby_fold = 1
 " omnicomplete vim-like navigation override
 inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
 inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
+
+autocmd FileType haml setlocal foldmethod=indent
