@@ -27,3 +27,4 @@ Plug 'chr4/nginx.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-markdown'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
