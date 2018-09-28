@@ -17,5 +17,5 @@ alias ...="cd ../.."
 
 # Shorthand
 alias be="bundle exec"
-
 alias tmux='TERM=xterm-256color tmux'
+alias grunt='npx grunt'
