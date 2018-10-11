@@ -24,8 +24,8 @@ Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'chr4/nginx.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-markdown'
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'python-mode/python-mode', { 'branch': 'develop' }
+" Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
