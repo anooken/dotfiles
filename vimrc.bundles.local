@@ -7,7 +7,6 @@ UnPlug 'vim-slim'
 UnPlug 'vim-go'
 
 Plug 'ervandew/supertab'
-" Plug 'groenewege/vim-less'
 " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 Plug 'joshdick/onedark.vim'
 Plug 'isRuslan/vim-es6', { 'for': ['javascript'] }
@@ -18,14 +17,11 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'brookhong/ag.vim'
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'chr4/nginx.vim'
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'tpope/vim-markdown'
 Plug 'ekalinin/Dockerfile.vim'
 " Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
