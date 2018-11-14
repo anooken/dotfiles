@@ -82,4 +82,6 @@ let g:ruby_fold = 1
 inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
 inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
 
+inoremap ,, <Esc>
+
 autocmd FileType haml setlocal foldmethod=indent
