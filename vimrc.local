@@ -85,3 +85,6 @@ inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
 inoremap ,, <Esc>
 
 autocmd FileType haml setlocal foldmethod=indent
+
+" Set rubocop executable
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
