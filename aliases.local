@@ -16,6 +16,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 # Shorthand
-alias be="bundle exec"
+alias be='bundle exec'
+alias rails='be rails'
+alias rake='be rake'
 alias tmux='TERM=xterm-256color tmux'
 alias grunt='npx grunt'
+alias yarn='npx yarn'
