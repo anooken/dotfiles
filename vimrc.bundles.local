@@ -26,3 +26,5 @@ Plug 'ekalinin/Dockerfile.vim'
 " Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'roman/golden-ratio'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
