@@ -23,7 +23,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
-" Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'roman/golden-ratio'
 Plug 'leafgarland/typescript-vim'
