@@ -1,9 +1,17 @@
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 set ignorecase
 set smartcase
 set nowrap
 set softtabstop=2
 set autoindent
 set formatoptions-=t
+
+" disable Background Color Erase (BCE) so that color schemes
+" render properly when inside 256-color tmux and GNU screen.
+set t_ut=
 
 " Make vim explorer stay in current directory
 " let g:netrw_keepdir=0
@@ -15,9 +23,9 @@ set nofoldenable
 set foldlevel=1
 set noshowmode
 
-" colorscheme seoul256
 let g:seoul256_background = 236
-colorscheme seoul256
+" colorscheme seoul256
+colorscheme OceanicNext
 
 " Ale linting error jump
 nunmap ]r
@@ -63,6 +71,8 @@ let g:airline#extensions#default#layout = [
   \   ['a', 'b', 'c'],
   \   ['x', 'z', 'error', 'warning']
   \ ]
+
+let g:airline_theme='oceanicnext'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}

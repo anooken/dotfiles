@@ -1,4 +1,5 @@
 # Custom overrides for bash
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 # Bash terminal pimp
 COLOR_RED='\[\e[1;31m\]'

@@ -3,12 +3,10 @@
 " Disable unused plugins
 UnPlug 'vim-elixir'
 UnPlug 'vim-slim'
-" UnPlug 'ale'
 UnPlug 'vim-go'
 
 Plug 'ervandew/supertab'
 " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-Plug 'joshdick/onedark.vim'
 Plug 'isRuslan/vim-es6', { 'for': ['javascript'] }
 Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
@@ -16,7 +14,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
-Plug 'brookhong/ag.vim'
 Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
@@ -28,3 +25,4 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'roman/golden-ratio'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'mhartington/oceanic-next'
