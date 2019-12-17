@@ -3,7 +3,7 @@
 " Disable unused plugins
 UnPlug 'vim-elixir'
 UnPlug 'vim-slim'
-UnPlug 'vim-go'
+" UnPlug 'vim-go'
 
 Plug 'ervandew/supertab'
 " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
@@ -18,8 +18,8 @@ Plug 'karunsiri/vim-delete-hidden-buffers'
 Plug 'Konfekt/FastFold'
 Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
-Plug 'chr4/nginx.vim'
-Plug 'ekalinin/Dockerfile.vim'
+" Plug 'chr4/nginx.vim'
+" Plug 'ekalinin/Dockerfile.vim'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'roman/golden-ratio'
